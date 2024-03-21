@@ -1,0 +1,161 @@
+/* סגנון עבור כרטיסיית החיה */
+.card {
+  width: 250px;
+  height: 520px;
+  overflow: hidden;
+  background-color: white;
+  border-radius: 20px;
+  border: 2px solid black;
+  text-align: center;
+}
+
+.card img {
+  margin-top: 10px;
+  width: 250px;
+  height: 250px;
+  object-fit: contain;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card h2 {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.card p {
+  padding: 2px 6px;
+  font: 1em sans-serif;
+  color: black;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translate(-10px, 10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* סגנון עבור התמונה בכרטיסייה */
+#image {
+  /* גובה התמונה */
+  margin-right: 150px;
+  border: 2px solid black;
+}
+
+img {
+  width: 400px;
+  height: 400px;
+}
+
+/* סגנון עבור הכיתוב בכרטיסייה */
+.card-content {
+  padding: 0 20px; /* מרווח מסביב לפרטים */
+}
+#container {
+  display: flex;
+}
+/* סגנון עבור הכפתור */
+#feed-animal {
+  margin-top: 20px; /* מרווח מלמעלה */
+  padding: 15px 30px; /* פדינג ורוחב */
+  font-size: 20px; /* גודל פונט */
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#related-animals {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+/* סגנון עבור תיבת הטקסט */
+div #data {
+  font-family: Arial, sans-serif; /* הגדרת גופן */
+  font-size: 20px; /* גודל פונט */
+  color: #333; /* צבע טקסט */
+  line-height: 1.5; /* גובה קו בין שורות */
+  margin: auto;
+}
+
+/* סגנון עבור הכותרת */
+h1 {
+  font-size: 36px; /* גודל פונט */
+  font-weight: bold; /* משקל הפונט */
+  color: #000; /* צבע טקסט */
+  margin-bottom: 10px; /* מרווח מתחת לכותרת */
+}
+h2 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* סגנון עבור הפרטים */
+p {
+  margin: 5px 0; /* מרווח בין הפרטים */
+}
+
+/* סגנון עבור הכפתור */
+button {
+  padding: 10px 20px; /* פדינג ורוחב */
+  font-size: 20px; /* גודל פונט */
+  font-weight: bold; /* משקל הפונט */
+  color: #fff; /* צבע טקסט */
+  background-color: #4caf50; /* צבע רקע */
+  border: none; /* הסרת גבול */
+  border-radius: 5px; /* חיפוש כפתור */
+  cursor: pointer; /* הצגת סמן עכבר */
+}
+
+/* סגנון עבור כאשר העכבר נמצא מעל הכפתור */
+button:hover {
+  background-color: #45a049; /* צבע רקע בעת עכבר מעל הכפתור */
+}
+#modal {
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  left: 50%;
+  top: 50%;
+  width: 450px;
+  text-align: center;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#modalMessage {
+  background-color: #fefefe;
+  margin: 2% auto;
+  padding: 20px;
+  top: 25%;
+  left: 50%;
+  border: 1px solid #888;
+  border-radius: 3px;
+  width: 80%;
+}
+
+/* Close button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}

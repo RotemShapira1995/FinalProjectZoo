@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zoo</title>
+    <link rel="stylesheet" href="./zoo.css" />
+    <link rel="stylesheet" href="./navigation.css" />
+    <script src="./main.js"></script>
+    <script src="./navigation.js"></script>
+  </head>
+  <body>
+    <nav class="mynav" class="row">
+      <ul>
+        <li id="visitor-name"></li>
+        <li id="coins"></li>
+        <li id="goDashbored">
+          <a href="./dashboard.html">Go to Dashboard</a>
+        </li>
+        <li><button id="reset">Reset</button></li>
+        <li><select id="visitorsList"></select></li>
+      </ul>
+    </nav>
+
+    <h1>Zoo</h1>
+    <!--שיניתי פה לH1-->
+    <div class="animals-filters">
+      <div>
+        <input type="text" id="search" placeholder="Search by animal name" />
+      </div>
+      <div>
+        <label for="weight">Weight:</label>
+        <input type="number" id="weight" min="0" />
+      </div>
+      <div>
+        <label for="height">Height:</label>
+        <input type="number" id="height" min="0" />
+      </div>
+      <div>
+        <label for="color">Color:</label>
+        <input type="text" id="color" />
+      </div>
+      <div>
+        <label for="livingArea">Living Area:</label>
+        <select id="livingArea">
+          <option value="">Any</option>
+          <option value="land">Land</option>
+          <option value="sea">Sea</option>
+        </select>
+      </div>
+      <div id="animal-cards"></div>
+    </div>
+
+    <script src="zoo.js"></script>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./dashboard.css" />
+    <link rel="stylesheet" href="./navigation.css" />
+    <script src="./main.js"></script>
+  </head>
+  <body>
+    <nav class="mynav" class="row">
+      <ul>
+        <li id="visitor-name"></li>
+        <li id="coins"></li>
+        <li id="goDashbored">
+          <a href="./dashboard.html">Go to Dashboard</a>
+          <!--<a href="./animal.html">Go back to zoo</a>-->
+        </li>
+        <li><button id="reset">Reset</button></li>
+        <li>
+          <select id="visitorsList">
+            select visitor
+          </select>
+        </li>
+      </ul>
+    </nav>
+
+    <section id="bodySection">
+      <div id="visitorDah"></div>
+      <div id="visited-animals"></div>
+      <div id="feeded-animals"></div>
+      <div id="favorite-animal"></div>
+    </section>
+    <script src="./dashboard.js"></script>
+    <script src="./navigation.js"></script>
+  </body>
+</html>

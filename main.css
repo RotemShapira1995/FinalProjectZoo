@@ -1,0 +1,13 @@
+.navbarBtn {
+  display: block;
+  z-index: 99;
+  opacity: 0.4;
+  background-color: antiquewhite;
+  color: black;
+  font-size: larger;
+  border: 1px solid red;
+}
+.navbarBtnHide {
+    display: none;
+
+}

@@ -1,0 +1,90 @@
+body {
+  padding: 0;
+  margin: 0;
+  padding: 20px 80px;
+  background-image: url(".//images/images (1).jpeg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  background-attachment: fixed;
+}
+
+#favorite-animal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+#favorite-animal p {
+  text-align: center;
+  size: 28px;
+  font-style: italic;
+}
+
+#favorite-animal h1,
+#feeded-animals h1,
+#visited-animals h1 {
+  text-align: center;
+  size: 35px;
+}
+section#bodySection {
+  margin: 50px;
+}
+
+#feeded-animals,
+#visited-animals,
+#visitorDah {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  margin: 0 auto;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.fav-animal,
+.card {
+  width: 250px;
+  height: 520px;
+  overflow: hidden;
+  background-color: white;
+  border-radius: 20px;
+  border: 2px solid black;
+  text-align: center;
+}
+
+.card img {
+  margin-top: 10px;
+  width: 250px;
+  height: 250px;
+  object-fit: contain;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card h2 {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.card p {
+  padding: 2px 6px;
+  font: 1em sans-serif;
+  color: black;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translate(-10px, 10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}

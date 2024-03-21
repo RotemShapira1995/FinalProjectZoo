@@ -1,0 +1,82 @@
+body {
+  padding: 20px 80px;
+  background-image: url(./images/ZooLogin.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  background-attachment: fixed;
+}
+h1 {
+  color: white;
+  text-align: center;
+}
+#placeholder {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+
+button {
+  margin: 10px;
+  padding: 10px;
+}
+
+.visitor-card {
+  width: 250px;
+  height: 350px;
+  overflow: hidden;
+  background: white;
+  background-color: white;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.visitor-card img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  margin: 0 auto;
+  max-width: 250px;
+}
+
+.visitor-card h2 {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.visitor-card p {
+  text-align: center;
+  padding: 2px 6px;
+}
+
+.empty-result {
+  width: 100%;
+  text-align: center;
+  color: rgb(248, 238, 238);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+}
+
+dialog {
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translate(-10px, 10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}

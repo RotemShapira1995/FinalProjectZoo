@@ -1,0 +1,38 @@
+header {
+  max-height: 150px;
+  margin: 15px;
+}
+
+.mynav {
+  padding: 0;
+  background-color: transparent;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.mynav ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 25px;
+  list-style: none;
+}
+
+.mynav ul li {
+  height: 40px;
+}
+
+/*.sidebar button,*/
+.mynav button#reset {
+  height: 100%;
+  padding: 0 20px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+.mynav button#reset:hover {
+  background-color: #f0f0f0;
+}

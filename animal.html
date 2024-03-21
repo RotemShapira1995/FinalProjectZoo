@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animal</title>
+    <link rel="stylesheet" href="./animals.css" />
+    <link rel="stylesheet" href="./navigation.css" />
+    <script src="./main.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="mynav" class="row">
+        <ul>
+          <li id="visitor-name"></li>
+          <li id="coins"></li>
+          <li id="goDashbored">
+            <a href="./dashboard.html">Go to Dashboard</a>
+          </li>
+          <li><button id="reset">Reset</button></li>
+          <li><select id="visitorsList"></select></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="container">
+      <div id="image">
+        <!-- show here the animal image -->
+      </div>
+      <div id="data">
+        <h1 id="name"></h1>
+        <p id="weight"></p>
+        <p id="height"></p>
+        <p id="color"></p>
+        <p id="habitat"></p>
+        <p id="isPredator"></p>
+        <button id="feed-animal">Feed Animal</button>
+      </div>
+    </div>
+    <h2>animals of the same habitat</h2>
+    <div id="related-animals"></div>
+    <!-- Modal -->
+    <div id="modal">
+      <div id="modalMessage"></div>
+    </div>
+    <!-- <script src="./navigation.js"></script>-->
+    <script src="./animal.js"></script>
+    <script src="./navigation.js"></script>
+  </body>
+</html>
